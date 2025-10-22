@@ -1,0 +1,23 @@
+/* TaskList Styles */
+.task-list {
+  animation: fadeInList 0.4s ease-out;
+}
+
+@keyframes fadeInList {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.task-list:empty::after {
+  content: 'No tasks found';
+  display: block;
+  text-align: center;
+  padding: 32px;
+  color: #999;
+  font-size: 14px;
+}
+
